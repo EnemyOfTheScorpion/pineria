@@ -1,0 +1,49 @@
+name: Feature request
+description: Suggest something Pineria should be able to do
+title: '[Feature]: '
+labels: ['enhancement']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Good suggestions usually start from a problem rather than a solution. What were you trying
+        to get done when Pineria got in the way?
+
+        Worth checking the [roadmap](https://github.com/EnemyOfTheScorpion/pineria#roadmap) first —
+        macOS builds, auto-update, content search and a live filesystem watcher are known gaps.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: The situation, not the feature.
+      placeholder: I have 40,000 photos from three phones and I want to…
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would help?
+      description: Your idea for solving it, if you have one.
+    validations:
+      required: false
+
+  - type: textarea
+    id: workaround
+    attributes:
+      label: How do you handle it today?
+      description: Another program, a manual routine, or simply not at all.
+
+  - type: checkboxes
+    id: principles
+    attributes:
+      label: Does this fit Pineria?
+      description: |
+        Pineria is local-first and conservative with your files. Requests that need a cloud service
+        or an account will not be built — that is the whole point of the project.
+      options:
+        - label: This works entirely offline, on the user's own machine
+          required: true
+        - label: This never modifies or deletes a file without the user asking
+          required: true

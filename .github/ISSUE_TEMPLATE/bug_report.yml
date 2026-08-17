@@ -1,0 +1,95 @@
+name: Bug report
+description: Something in Pineria does not work the way it should
+title: '[Bug]: '
+labels: ['bug']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. The more specific you are, the faster this gets fixed.
+
+        **Before you post:** if a file operation went wrong, check the Recycle Bin and
+        **History** (`Ctrl+K` → *Show operation history*) first — Pineria records everything it
+        did, and most operations can be undone from there.
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you expect, and what did you get instead?
+      placeholder: I selected 12 files and pressed Move here, and…
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: The exact sequence. "It happens sometimes" is fine too — say so and describe when.
+      placeholder: |
+        1. Open the Archive Organizer
+        2. Select a folder on the left
+        3. …
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Pineria version
+      description: Settings → About
+      placeholder: 0.1.0
+    validations:
+      required: true
+
+  - type: dropdown
+    id: windows
+    attributes:
+      label: Windows version
+      options:
+        - Windows 11
+        - Windows 10
+        - Other / not sure
+    validations:
+      required: true
+
+  - type: dropdown
+    id: install
+    attributes:
+      label: How did you install it?
+      options:
+        - Installer (Pineria Setup)
+        - Portable executable
+    validations:
+      required: true
+
+  - type: input
+    id: archive-size
+    attributes:
+      label: Roughly how big is the archive involved?
+      description: Helps enormously with anything slow or memory related.
+      placeholder: about 200,000 files on an external drive
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error id or log excerpt
+      description: |
+        If Pineria showed an error it included a short id — paste it here. A log excerpt helps too:
+        **Settings → About → Open log folder**.
+
+        **Read it before you paste it** — log lines contain file paths from your own machine.
+      render: text
+
+  - type: checkboxes
+    id: data-safety
+    attributes:
+      label: Did anything happen to your files?
+      options:
+        - label: A file went missing or ended up somewhere unexpected
+        - label: Something was changed that I did not ask for
+  - type: markdown
+    attributes:
+      value: |
+        If you ticked either box above, say so in the title as well — data-safety reports jump
+        the queue.

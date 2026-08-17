@@ -1,0 +1,17 @@
+# This repository ships documentation and screenshots only.
+# The application itself is attached to GitHub Releases, never committed —
+# an 82 MB binary in git history would be permanent and unpleasant for everyone
+# who clones the repo.
+*.exe
+*.blockmap
+*.zip
+*.7z
+checksums.txt
+
+# OS and editor noise
+Thumbs.db
+Desktop.ini
+.DS_Store
+.vscode/
+.idea/
+*.swp

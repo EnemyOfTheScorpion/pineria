@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question or idea
+    url: https://github.com/EnemyOfTheScorpion/pineria/discussions
+    about: Ask how something works, or talk through an idea before opening an issue.
+  - name: Read the FAQ first
+    url: https://github.com/EnemyOfTheScorpion/pineria/blob/main/docs/faq.md
+    about: SmartScreen warnings, where your data lives, why search behaves the way it does.
+  - name: Report a security or data-loss problem privately
+    url: https://github.com/EnemyOfTheScorpion/pineria/security/advisories/new
+    about: Anything that risks other people's files — please do not open a public issue.

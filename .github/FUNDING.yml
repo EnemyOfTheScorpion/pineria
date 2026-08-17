@@ -1,0 +1,12 @@
+# Shows the "Sponsor" button at the top of the repository page.
+#
+# GitHub Sponsors has to be enabled on the account before this does anything:
+#   https://github.com/sponsors/EnemyOfTheScorpion  → Get sponsored
+# It needs identity and bank verification, which only the account owner can do.
+# Until that is finished this file is harmless — the button simply will not appear.
+github: [EnemyOfTheScorpion]
+
+# Other channels can be added later, for example:
+# ko_fi: your-handle
+# buy_me_a_coffee: your-handle
+# custom: ['https://www.paypal.me/your-handle']
