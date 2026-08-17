@@ -17,7 +17,7 @@ Pineria is not code-signed, so Windows treats it as an unknown program. Click **
 If you would rather verify than trust, compare the hash against the `checksums.txt` in the release:
 
 ```powershell
-Get-FileHash ".\Pineria.Setup.0.1.0.exe" -Algorithm SHA256
+Get-FileHash ".\Pineria.Setup.0.1.1.exe" -Algorithm SHA256
 ```
 
 A matching hash means the file is exactly what was published. Only download from the

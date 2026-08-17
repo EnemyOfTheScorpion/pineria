@@ -6,6 +6,48 @@ What changed in each release, written for the people using it.
 
 ---
 
+## 0.1.1 — 17 August 2026
+
+Five fixes from real use. Install over 0.1.0; your index, tags and collections are kept.
+
+### Folders of photos load properly now
+
+A grid tile is about 112 pixels wide, but Pineria was pointing it at the original file — so opening
+a folder of forty photos meant decoding forty full-size images. On a real photo library that showed
+as tiles arriving slowly, or never arriving.
+
+Tiles now use the thumbnail Windows already keeps, cached on disk. Measured on 24 photos: **23,639 KB
+of originals becomes 811 KB of thumbnails**, decoded at 256×160 rather than 1920×1200. The cache keys
+on each file's size and date, so an edited photo refreshes its own tile.
+
+### Right-click works in the Archive Organizer
+
+Files, folders in either index, and the empty space around them now have a menu: open, move or copy
+to the other side, add to the queue, rename, new folder, pin as a quick destination, tag, show in
+Explorer, copy path, and move to the Recycle Bin. Rename and delete each ask first, and both undo
+with `Ctrl+Z`.
+
+### The two organizer panes no longer open on the same folder
+
+The right side prefers a second archive folder when you have one. When both sides do point at the
+same place it says so, and offers to pick another folder or create a new one — which then opens on
+the right, ready to receive files.
+
+### Duplicates can be acted on in bulk
+
+Select copies across groups with a running total of the space you would free; **Select every extra
+copy** respects whichever copy you marked as the keeper; expanding a group shows every property of
+each copy — modified, created and opened dates, size, extension, tags and full path; and a floating
+bar sends the selection to the Recycle Bin at once. The copy marked *keeping* can never be selected,
+so the last one cannot be deleted by accident.
+
+### Archive health can tidy what it finds
+
+Empty folders, zero-byte files and files reported missing can be ticked and cleared in one go rather
+than only listed. The duplicate summary line stays unselectable, being a headline rather than a file.
+
+---
+
 ## 0.1.0 — 17 August 2026
 
 The first public release.
