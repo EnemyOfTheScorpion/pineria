@@ -113,13 +113,13 @@ Dark is the design's home ground. Light is a genuine re-grounding, not an invert
 
 | File | Best for |
 | --- | --- |
-| `Pineria Setup 0.1.0.exe` | Most people. Installs normally, adds Start Menu and desktop shortcuts, uninstalls cleanly. |
-| `Pineria Portable 0.1.0.exe` | Running from a USB stick, or trying it without installing anything. |
+| `Pineria.Setup.0.1.0.exe` | Most people. Installs normally, adds Start Menu and desktop shortcuts, uninstalls cleanly. |
+| `Pineria.Portable.0.1.0.exe` | Running from a USB stick, or trying it without installing anything. |
 
 Every release ships a `checksums.txt` so you can verify what you downloaded:
 
 ```powershell
-Get-FileHash ".\Pineria Setup 0.1.0.exe" -Algorithm SHA256
+Get-FileHash ".\Pineria.Setup.0.1.0.exe" -Algorithm SHA256
 ```
 
 > **Windows SmartScreen will warn you on first run.** Pineria is not code-signed — a certificate
