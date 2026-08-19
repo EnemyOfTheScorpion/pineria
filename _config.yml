@@ -19,3 +19,17 @@ baseurl: /pineria
 # this repository, which is documentation. The download people want is the
 # installer, and the README links to it in the first screenful.
 show_downloads: false
+
+# GitHub Pages excludes the community health files from a site by default, which
+# would 404 the two links the README makes to them. Naming the exclusions here
+# replaces that default list; there is no Gemfile or vendor directory in this
+# repository for the standard entries to protect against.
+exclude:
+  - .gitignore
+
+# The handbook pages link back with `[← Back to Pineria](../README.md)`, which is
+# the correct link when you are reading the file on github.com. Keeping the
+# original README page alongside the generated home page means the same link is
+# also correct on the site.
+readme_index:
+  remove_originals: false
