@@ -34,3 +34,15 @@ include:
 # also correct on the site.
 readme_index:
   remove_originals: false
+
+# Link previews. Jekyll SEO Tag ships with the theme and already writes the title,
+# the description and the canonical URL; these give it a picture to show when
+# somebody pastes a link somewhere, and the icon for the schema.org block.
+logo: /assets/icon.png
+twitter:
+  card: summary_large_image
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/browse.png
