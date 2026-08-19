@@ -13,8 +13,9 @@ Find, tag and reorganise a lifetime of files — without moving them to anyone's
 [![Downloads](https://img.shields.io/github/downloads/EnemyOfTheScorpion/pineria/total?style=for-the-badge&color=8b5cf6)](https://github.com/EnemyOfTheScorpion/pineria/releases)
 [![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-0078D4?style=for-the-badge&logo=windows&logoColor=white)](#requirements)
 [![Free](https://img.shields.io/badge/price-free-2dd4bf?style=for-the-badge)](LICENSE)
+[![Handbook](https://img.shields.io/badge/handbook-read%20online-0ea5e9?style=for-the-badge)](https://enemyofthescorpion.github.io/pineria/)
 
-**[⬇ Download for Windows](https://github.com/EnemyOfTheScorpion/pineria/releases/latest)** · [Quick start](docs/quick-start.md) · [FAQ](docs/faq.md)
+**[⬇ Download for Windows](https://github.com/EnemyOfTheScorpion/pineria/releases/latest)** · [Quick start](docs/quick-start.md) · [FAQ](docs/faq.md) · [Handbook](https://enemyofthescorpion.github.io/pineria/)
 
 </div>
 
@@ -138,6 +139,9 @@ Get-FileHash ".\Pineria.Setup.0.1.2.exe" -Algorithm SHA256
 
 ## Documentation
 
+Everything below is in this repository, and the same pages are readable as a site at
+**[enemyofthescorpion.github.io/pineria](https://enemyofthescorpion.github.io/pineria/)**.
+
 | | |
 | --- | --- |
 | [Installation](docs/installation.md) | Installing, updating, uninstalling, and where your data lives |
@@ -147,6 +151,8 @@ Get-FileHash ".\Pineria.Setup.0.1.2.exe" -Algorithm SHA256
 | [FAQ](docs/faq.md) | The questions people actually ask |
 | [Troubleshooting](docs/troubleshooting.md) | When something goes wrong |
 | [Privacy](PRIVACY.md) | Exactly what Pineria reads and writes |
+| [Changelog](CHANGELOG.md) | What changed in each release |
+| [Contributing](CONTRIBUTING.md) | Reporting a bug well, and what can be sent as a pull request |
 
 ---
 

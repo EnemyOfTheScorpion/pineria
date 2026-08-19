@@ -1,0 +1,21 @@
+# GitHub Pages.
+#
+# The site is this repository, built from the root: README.md becomes the home
+# page (jekyll-readme-index, on by default for Pages), docs/*.md become the
+# handbook, and assets/ carries the screenshots. Every link between these files
+# is an ordinary relative markdown link, so it works when you read the files on
+# github.com *and* on the site — jekyll-relative-links, also on by default,
+# rewrites them at build time. Nothing here needs a Gemfile: the theme is one
+# GitHub Pages ships.
+title: Pineria
+description: >-
+  Your digital memory, indexed. A local-first archive and digital library
+  manager for Windows — no cloud, no account, no telemetry.
+theme: jekyll-theme-cayman
+url: https://enemyofthescorpion.github.io
+baseurl: /pineria
+
+# The "Download .zip / .tar.gz" buttons the theme can add would offer a copy of
+# this repository, which is documentation. The download people want is the
+# installer, and the README links to it in the first screenful.
+show_downloads: false
