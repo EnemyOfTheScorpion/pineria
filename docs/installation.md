@@ -30,7 +30,7 @@ and shipping them elsewhere would mean protecting the wrong directories.
 
 Every release has two executables. They are the same application.
 
-| | `Pineria.Setup.0.1.1.exe` | `Pineria.Portable.0.1.1.exe` |
+| | `Pineria.Setup.0.1.2.exe` | `Pineria.Portable.0.1.2.exe` |
 | --- | --- | --- |
 | What it does | Installs Pineria properly | Runs straight from the file you downloaded |
 | Administrator rights | Not needed — it installs for your user account only | Not needed |
@@ -78,13 +78,13 @@ Every release ships a `checksums.txt` listing the SHA-256 fingerprint of each fi
 alongside the executable, then check the file you actually received:
 
 ```powershell
-Get-FileHash ".\Pineria.Setup.0.1.1.exe" -Algorithm SHA256
+Get-FileHash ".\Pineria.Setup.0.1.2.exe" -Algorithm SHA256
 ```
 
 Or, to print just the fingerprint:
 
 ```powershell
-(Get-FileHash ".\Pineria.Setup.0.1.1.exe" -Algorithm SHA256).Hash
+(Get-FileHash ".\Pineria.Setup.0.1.2.exe" -Algorithm SHA256).Hash
 ```
 
 Compare the result against the matching line in `checksums.txt`. Capitalisation does not matter; the
@@ -98,7 +98,7 @@ it as the alternative.
 
 ## Installing
 
-Run `Pineria.Setup.0.1.1.exe` and follow the two or three prompts. There is no administrator prompt,
+Run `Pineria.Setup.0.1.2.exe` and follow the two or three prompts. There is no administrator prompt,
 because Pineria installs for your user account only.
 
 By default it goes to:
@@ -126,7 +126,7 @@ anything. [Quick start](quick-start.md) walks through the first ten minutes.
 
 ### Running the portable build
 
-Put `Pineria.Portable.0.1.1.exe` wherever you like and double-click it. It unpacks itself and runs.
+Put `Pineria.Portable.0.1.2.exe` wherever you like and double-click it. It unpacks itself and runs.
 There is nothing to install and no shortcut to create — make one by hand if you want one.
 
 Only one copy of Pineria runs at a time, installed or portable. Launching a second copy brings the

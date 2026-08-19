@@ -6,9 +6,10 @@ What changed in each release, written for the people using it.
 
 ---
 
-## Unreleased
+## 0.1.2 — 19 August 2026
 
-Fixed since 0.1.1, and waiting for the next download.
+Grid tiles, four things that were half-built, and the documentation catching up with reality.
+Install over 0.1.1; your index, tags and collections are kept.
 
 ### Grid view in the Archive Organizer shows pictures again
 
@@ -26,6 +27,31 @@ and caches it, so a folder of clips looks like its contents rather than a list o
 Which formats have a picture depends on what your Windows installation can draw: anything it has no
 thumbnail for keeps its file-type icon, which is the honest answer rather than a blank tile. Nothing
 is decoded or re-encoded by Pineria itself, and a tile never loads a whole video to show one frame.
+
+### The organizer suggests where a file could go
+
+The left column now shows a suggestion beside each file — `→ Photos` — pointing at a folder that
+already exists under the destination you have open on the right. It is worked out from the file's
+name and type against the names of your folders; nothing is read, nothing is analysed, and nothing
+moves. If no folder fits, it says nothing rather than inventing somewhere.
+
+### The indexing-speed setting is connected
+
+**Settings → Indexing → concurrency** was stored and validated and then read by nobody. It now
+controls how many files the indexer inspects at once while walking a folder, which is what makes
+the difference on a slow disk or a network drive. It applies to the next scan you start.
+
+### Archive health tells "gone" from "cannot read"
+
+A file behind a permission you do not have, on a drive that is not plugged in, or locked by another
+program, used to be reported as **missing** — which suggested it would quietly disappear at the next
+scan. Those are now listed separately as files Pineria could not read, and left alone.
+
+### An interrupted job is noticed at startup
+
+If Pineria is killed in the middle of moving files, the log now says so the next time it starts.
+The offer to finish the job, undo it, or leave things as they are still appears when you open the
+Archive Organizer, exactly as before.
 
 ---
 

@@ -27,7 +27,7 @@ If you would rather not take that on trust, verify the download instead. Every r
 `checksums.txt`; compare it with:
 
 ```powershell
-Get-FileHash ".\Pineria.Setup.0.1.1.exe" -Algorithm SHA256
+Get-FileHash ".\Pineria.Setup.0.1.2.exe" -Algorithm SHA256
 ```
 
 If the hash matches, the file is byte-for-byte what was published. Only download Pineria from the
