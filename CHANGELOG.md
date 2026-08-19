@@ -6,6 +6,29 @@ What changed in each release, written for the people using it.
 
 ---
 
+## Unreleased
+
+Fixed since 0.1.1, and waiting for the next download.
+
+### Grid view in the Archive Organizer shows pictures again
+
+Tiles in the organizer's grid were collapsing to thin horizontal bands: a sliver of each photo and
+no filename, so a folder of images read as a stack of coloured lines. The column the grid sits in
+does its own scrolling, and that was enough to stop each tile from claiming the square it needs.
+Tiles are square again, with the picture and the filename both visible.
+
+### Videos have thumbnails
+
+A film used to show a generic film icon while Explorer, in the next window, showed a frame from it.
+Pineria now asks Windows for the same picture Explorer uses — for videos, photos and PDFs alike —
+and caches it, so a folder of clips looks like its contents rather than a list of identical icons.
+
+Which formats have a picture depends on what your Windows installation can draw: anything it has no
+thumbnail for keeps its file-type icon, which is the honest answer rather than a blank tile. Nothing
+is decoded or re-encoded by Pineria itself, and a tile never loads a whole video to show one frame.
+
+---
+
 ## 0.1.1 — 17 August 2026
 
 Five fixes from real use. Install over 0.1.0; your index, tags and collections are kept.

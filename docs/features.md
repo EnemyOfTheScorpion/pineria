@@ -11,7 +11,9 @@ rather than buried at the end — finding them out the hard way is worse.
 
 A file browser that reads the disk directly, so you can browse folders you have never indexed.
 
-- List, details and grid views, switchable per session
+- List, details and grid views, switchable per session — grid tiles show the thumbnail Windows
+  already keeps for photos, videos and PDFs, cached after the first look; anything Windows has no
+  thumbnail for shows its file-type icon
 - Breadcrumbs that collapse sensibly on deep paths
 - Back, forward and up, with `Alt+←`, `Alt+→` and `Alt+↑`
 - Quick access to Desktop, Documents, Downloads, Pictures, Music, Videos and every drive letter

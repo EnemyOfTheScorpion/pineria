@@ -131,8 +131,9 @@ Nothing is decided for you, and the offer stays until you answer it.
 A folder with tens of thousands of files should still scroll smoothly, because only the rows on
 screen are drawn. If it does not:
 
-- Switch from **grid** to **list** view. Grid view decodes image thumbnails, which is the expensive
-  part.
+- Switch from **grid** to **list** view. Grid tiles come from the thumbnails Windows keeps, and are
+  cached after the first look, but the first pass through a folder Windows has never drawn is the
+  slow one.
 - Close the preview pane with `Ctrl+P`.
 - Use a filter or the search box to narrow the list rather than scrolling through everything.
 
