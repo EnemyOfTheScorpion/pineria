@@ -20,12 +20,13 @@ baseurl: /pineria
 # installer, and the README links to it in the first screenful.
 show_downloads: false
 
-# GitHub Pages excludes the community health files from a site by default, which
-# would 404 the two links the README makes to them. Naming the exclusions here
-# replaces that default list; there is no Gemfile or vendor directory in this
-# repository for the standard entries to protect against.
-exclude:
-  - .gitignore
+# GitHub Pages forces its own `exclude` list, which drops the community health
+# files and the README from the site — and the documentation links to all three.
+# `include` is checked before `exclude`, so it is the way back in.
+include:
+  - README.md
+  - CONTRIBUTING.md
+  - CODE_OF_CONDUCT.md
 
 # The handbook pages link back with `[← Back to Pineria](../README.md)`, which is
 # the correct link when you are reading the file on github.com. Keeping the
