@@ -3,3 +3,12 @@
 <link rel="icon" type="image/png" href="{{ '/assets/icon.png' | relative_url }}">
 <link rel="apple-touch-icon" href="{{ '/assets/icon.png' | relative_url }}">
 <meta name="theme-color" content="#0f172a">
+{% if page.url == "/" %}
+<style>
+  /* The home page is the README, which opens with its own centred icon, title
+     and tagline. The theme's banner would say all of it a second time, so it is
+     hidden here and kept on every other page, where it is the way back home. */
+  .page-header { display: none; }
+  .main-content { padding-top: 2rem; }
+</style>
+{% endif %}
