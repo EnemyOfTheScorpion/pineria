@@ -1,4 +1,4 @@
-<div align="center">
+<div align="center" markdown="1">
 
 <img src="assets/icon.png" alt="Pineria" width="120" />
 
@@ -197,6 +197,6 @@ licences ship with the application.
 
 ---
 
-<div align="center">
+<div align="center" markdown="1">
 <sub>Built for people who would rather own their archive than rent it.</sub>
 </div>
